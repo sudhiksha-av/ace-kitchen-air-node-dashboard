@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: 28px 0 40px;
+  background:
+    linear-gradient(180deg, rgba(27, 106, 111, 0.08), rgba(245, 247, 248, 0) 260px),
+    #f5f7f8;
+}
+
+.center-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 14px;
+}
+
+.dashboard-header {
+  padding: 12px 0 6px;
+}
+
+.brand-title-row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 96px 1fr 220px;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand-logo {
+  display: block;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.brand-logo-left {
+  width: 86px;
+  height: 86px;
+}
+
+.brand-logo-right {
+  width: 220px;
+  height: 86px;
+}
+
+.dashboard-title {
+  text-align: center;
+  color: #073b52;
+  letter-spacing: 0;
+}
+
+.sensor-card {
+  height: 100%;
+}
+
+.sensor-value {
+  margin-top: 10px;
+  word-break: break-word;
+}
+
+.status-band {
+  padding: 16px;
+  border: 1px solid #d9e2e4;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.alert-stack {
+  max-width: 520px;
+}
+
+.chart-panel {
+  height: 100%;
+  padding: 18px;
+  border: 1px solid #d9e2e4;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.aqi-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+}
+
+.empty-chart {
+  min-height: 360px;
+  display: grid;
+  place-items: center;
+  border: 1px dashed #b9c7ca;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .app-shell {
+    padding-top: 16px;
+  }
+
+  .brand-title-row {
+    grid-template-columns: 64px 1fr 112px;
+    gap: 10px;
+  }
+
+  .brand-logo-left {
+    width: 58px;
+    height: 58px;
+  }
+
+  .brand-logo-right {
+    width: 112px;
+    height: 58px;
+  }
+
+  .chart-panel {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: ace-kitchen-air-node-dashboard
+    runtime: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: THINGSPEAK_CHANNEL_ID
+        value: "3420564"
+      - key: THINGSPEAK_READ_API_KEY
+        sync: false
+      - key: CACHE_TTL_SECONDS
+        value: "15"
+      - key: NODE_OFFLINE_MINUTES
+        value: "60"
+      - key: COOKING_BASELINE_ALERTS_ENABLED
+        value: "true"
+      - key: COOKING_BASELINE_STAT
+        value: "P95"
+      - key: COOKING_BASELINE_MARGIN_PERCENT
+        value: "0"
+      - key: WHATSAPP_PROVIDER
+        value: "disabled"
